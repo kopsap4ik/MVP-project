@@ -7,15 +7,15 @@
 
 import Foundation
 
-// output
-protocol MainViewProtocol: class { //class для слабых ссылок
-    func setGreeting(greeting: String)
-}
-
 // input
-protocol MainViewPresenterProtocol: class {
+protocol MainViewPresenterProtocol: class { //class для слабых ссылок, Классовые протоколы: https://habr.com/ru/company/acronis/blog/420239/
     init(view: MainViewProtocol, person: Person)
     func showGreeting()
+}
+
+// output
+protocol MainViewProtocol: class {
+    func setGreeting(greeting: String)
 }
 
 class MainPresenter: MainViewPresenterProtocol {
@@ -31,7 +31,4 @@ class MainPresenter: MainViewPresenterProtocol {
         let greeting = person.firstName + " " + person.lastName
         view.setGreeting(greeting: greeting)
     }
-    
-    
-    
 }

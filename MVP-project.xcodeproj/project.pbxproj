@@ -101,6 +101,8 @@
 			children = (
 				D9EC67B02594A9C9001C0C08 /* MainViewController.swift */,
 				D924AC3B2594BAEC00828D22 /* MainViewController.xib */,
+				D9EC67B72594A9CC001C0C08 /* LaunchScreen.storyboard */,
+				D9EC67B22594A9C9001C0C08 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -151,9 +153,7 @@
 				D9EC67AE2594A9C9001C0C08 /* SceneDelegate.swift */,
 				D924AC402594BEFB00828D22 /* ModelBuilder.swift */,
 				D924AC3A2594BA5B00828D22 /* MainModule */,
-				D9EC67B22594A9C9001C0C08 /* Main.storyboard */,
 				D9EC67B52594A9CC001C0C08 /* Assets.xcassets */,
-				D9EC67B72594A9CC001C0C08 /* LaunchScreen.storyboard */,
 				D9EC67BA2594A9CC001C0C08 /* Info.plist */,
 			);
 			path = "MVP-project";

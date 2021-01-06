@@ -46,12 +46,12 @@ class MainPresenterTest: XCTestCase {
     
     func testView() {
         presenter.showGreeting()
-        XCTAssertEqual(view.titleTest, "BazBar")
+        XCTAssertEqual(view.titleTest, "Baz Bar")
     }
     
     func testPersonModel(){
         XCTAssertEqual(person.firstName, "Baz")
-        XCTAssertEqual(person.lastName, "Barf")
+        XCTAssertEqual(person.lastName, "Bar")
     }
 
 //    func testExample() throws {
