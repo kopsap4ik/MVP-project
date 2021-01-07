@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController" customModule="MVP_project" customModuleProvider="target">
             <connections>
-                <outlet property="greetingLabel" destination="lnQ-wb-Q6g" id="2Vb-h7-EuK"/>
+                <outlet property="tableView" destination="6PS-qH-RNk" id="nA1-8Y-JPM"/>
                 <outlet property="view" destination="iN0-l3-epB" id="oE6-Z3-z7C"/>
             </connections>
         </placeholder>
@@ -19,24 +19,23 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKv-Iz-UhP">
-                    <rect key="frame" x="127" y="506" width="161" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6PS-qH-RNk">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <connections>
-                        <action selector="didTapButton:" destination="-1" eventType="touchUpInside" id="m98-3Q-Ro5"/>
+                        <outlet property="dataSource" destination="-1" id="ZW9-mP-JrH"/>
+                        <outlet property="delegate" destination="-1" id="efB-D4-tcg"/>
                     </connections>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnQ-wb-Q6g">
-                    <rect key="frame" x="30" y="404" width="354" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="6PS-qH-RNk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HN9-Zh-RAJ"/>
+                <constraint firstAttribute="bottom" secondItem="6PS-qH-RNk" secondAttribute="bottom" id="HgG-W0-EHV"/>
+                <constraint firstItem="6PS-qH-RNk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Qym-dJ-UhD"/>
+                <constraint firstItem="6PS-qH-RNk" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="yuz-1s-6AP"/>
+            </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="120.53571428571428"/>
         </view>
     </objects>
